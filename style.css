@@ -1,0 +1,47 @@
+<!-- === CSS === -->
+<style>
+  /* Contenedor para centrar el botón */
+  .custom-button-container {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+  }
+
+  /* Estilo base del botón */
+  .custom-button {
+    background-color: #b51200;
+    color: white;
+    padding: 12px 24px;
+    border: 1px solid white;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s, transform 0.2s;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  }
+
+  /* Espacio para el ícono */
+  .custom-button i {
+    margin-right: 8px;
+  }
+
+  /* Efecto al pasar el ratón */
+  .custom-button:hover:not(:disabled) {
+    background-color: #d11500;
+    transform: scale(1.05);
+  }
+
+  /* Estilo cuando está desactivado */
+  .custom-button:disabled {
+    background-color: #6a6a6a;
+    cursor: not-allowed;
+  }
+
+  /* Ajuste para pantallas pequeñas */
+  @media (max-width: 600px) {
+    .custom-button {
+      padding: 10px 20px;
+      font-size: 14px;
+    }
+  }
+</style>
